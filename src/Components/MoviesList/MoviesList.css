@@ -1,0 +1,9 @@
+
+.MoviesList {
+  width: 100%;
+  position: relative;
+  top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,36 @@
+.Movies {
+  width: 18.75rem;
+  height: 34.5rem;
+  padding-bottom: 1.7rem;
+}
+
+.Movies:hover {
+  cursor: pointer;
+  border: 3px solid #B5B5B5;
+  transition: border 0.2s;
+}
+
+.poster img {
+  width: 18.75rem;
+  height: 25rem;
+}
+
+.poster {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.more-info a {
+  border-radius: 4px;
+  padding: .72rem 1.7rem;
+  background-color: #cca353;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.more-info a:hover {
+  cursor: pointer;
+  background-color: #a7874b;
+}
