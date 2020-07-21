@@ -1,0 +1,13 @@
+
+.ErrorBoundary {
+  width: 50rem;
+  height: 15.625;
+  position: relative;
+  top: 5%;
+  left: 20%;
+  border: 1px solid #000000;
+}
+
+.ErrorBoundary h3 {
+  margin: 10px 0px;
+}

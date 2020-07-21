@@ -1,13 +1,13 @@
 .Movies {
-  width: 18.75rem;
+  width: 18.95rem;
   height: 34.5rem;
   padding-bottom: 1.7rem;
 }
 
 .Movies:hover {
   cursor: pointer;
-  border: 3px solid #B5B5B5;
-  transition: border 0.2s;
+  background-color: #C7C7C7;
+  transition: background-color 0.5s;
 }
 
 .poster img {
@@ -26,7 +26,7 @@
   background-color: #cca353;
   color: #ffffff;
   font-weight: 600;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
   cursor: pointer;
 }
 

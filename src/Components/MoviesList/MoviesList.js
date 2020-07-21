@@ -7,12 +7,12 @@ class MoviesList extends React.Component {
     let i = 0;
     return (
       <div className="MoviesList">
-        {
-          this.props.movies.map(movies => {
-            i++;
-            return <Movie movies={movies} key={i}/>
-          })
-        }
+          {
+            this.props.movies.map(movies => {
+              i++;
+              return <Movie movies={movies} key={i}/>
+            })
+          }
       </div>
     );
   }

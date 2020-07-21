@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import MoviesList from '../MoviesList/MoviesList.js';
 import SearchBar from '../SearchBar/SearchBar.js';
-import database from '../../database'
+import database from '../../database.js';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,18 +17,18 @@ class App extends React.Component {
 
   searchMovies(movie_title) {
     movie_title = movie_title.replace(/\s+/g, '+').toLowerCase();
-    database.search(movie_title).then(movies => {
-      this.setState({ movies: movies })
+    database.searchMovies(movie_title).then(movies => {
+      this.setState({ movies: movies });
     });
-
   }
 
   render() {
     return (
       <div className="App">
-        
         <SearchBar searchMovies={this.searchMovies}/>
-        <MoviesList movies={this.state.movies}/>
+        <ErrorBoundary>
+          <MoviesList movies={this.state.movies}/>
+        </ErrorBoundary>
       </div>
     );
   }

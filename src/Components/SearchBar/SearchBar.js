@@ -16,12 +16,19 @@ class SearchBar extends React.Component {
     };
 
     this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
 
   }
 
   handleTermChange(event) {
     this.setState({ term: event.target.value });
+  }
+
+  handleKeyPress(event) {
+    if (event.charCode === 13) {
+      this.handleSearch(event);
+    }
   }
 
   handleSearch(event) {
@@ -37,7 +44,7 @@ class SearchBar extends React.Component {
           <h3 className="Search-title">Movies, series, episodes </h3>
         </div>
         <div className="SearchBar-fields">
-          <input placeholder="Search Here!" onChange={this.handleTermChange}/>
+          <input placeholder="Search Here!" onChange={this.handleTermChange} onKeyPress={this.handleKeyPress}/>
         </div>
         <div className="SearchBar-submit">
           <a onClick={this.handleSearch}>Let's Go</a>
