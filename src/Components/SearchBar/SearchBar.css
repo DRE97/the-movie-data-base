@@ -5,18 +5,18 @@
   background-image: url('../../images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  background-position: bottom;
+  height: 30rem;
 }
 
 .SearchBar-sort-options {
   position: relative;
-  bottom: 12%;
+  bottom: 21%;
 }
 
 .SearchBar-sort-options h1 {
   width: auto;
   color: #ffffff;
-  padding-bottom: 0.5rem;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -33,7 +33,7 @@
   justify-content: center;
   margin-bottom: 2.88rem;
   position: relative;
-  bottom: 12%;
+  bottom: 18%;
 }
 
 .SearchBar-fields input {
@@ -49,7 +49,7 @@
 .SearchBar-submit {
   text-align: center;
   position: relative;
-  bottom: 10%;
+  bottom: 18%;
 }
 
 .SearchBar-submit a {

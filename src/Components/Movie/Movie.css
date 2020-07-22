@@ -28,9 +28,18 @@
   font-weight: 600;
   transition: background-color 0.5s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .more-info a:hover {
   cursor: pointer;
   background-color: #a7874b;
+}
+
+.visible {
+  position: absolut
+}
+
+.no-visible {
+  display: none;
 }

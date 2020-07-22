@@ -19,8 +19,16 @@ let database = {
 
     const response = await fetch(api_url);
     let data = await response.json();
-
-    console.log(data);
+    //console.log(data);
+    return {
+      actors: data.Actors,
+      director: data.Director,
+      plot: data.Plot,
+      poster: data.Poster,
+      runTime: data.Runtime,
+      year: data.Year,
+      rating: data.imdbRating
+    };
   }
 };
 
